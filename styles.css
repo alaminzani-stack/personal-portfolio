@@ -2,23 +2,23 @@
    CSS CUSTOM PROPERTIES
    =========================== */
 :root {
-    /* Colors - Dark Theme */
-    --color-bg-primary: #0a0a0f;
-    --color-bg-secondary: #13131a;
-    --color-bg-tertiary: #1a1a24;
-    --color-bg-card: rgba(26, 26, 36, 0.6);
+    /* Colors - Dark Theme - Professional */
+    --color-bg-primary: #0f1419;
+    --color-bg-secondary: #1a1f2e;
+    --color-bg-tertiary: #252d3d;
+    --color-bg-card: rgba(37, 45, 61, 0.6);
 
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #b4b4c8;
-    --color-text-tertiary: #8a8a9e;
+    --color-text-primary: #e8eaed;
+    --color-text-secondary: #b8bdc8;
+    --color-text-tertiary: #8a8f9e;
 
-    --color-accent-primary: #8b5cf6;
-    --color-accent-secondary: #ec4899;
+    --color-accent-primary: #3b82f6;
+    --color-accent-secondary: #0ea5e9;
     --color-accent-tertiary: #06b6d4;
 
-    --color-gradient-1: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-    --color-gradient-2: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
-    --color-gradient-3: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+    --color-gradient-1: linear-gradient(135deg, #3b82f6 0%, #0ea5e9 100%);
+    --color-gradient-2: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    --color-gradient-3: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -49,7 +49,7 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.3);
+    --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.15);
 
     --border-radius-sm: 0.375rem;
     --border-radius-md: 0.5rem;
@@ -62,16 +62,16 @@
     --transition-slow: 350ms ease-in-out;
 }
 
-/* Light Theme */
+/* Light Theme - Professional */
 body.light-theme {
     --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f8f9fa;
-    --color-bg-tertiary: #e9ecef;
-    --color-bg-card: rgba(255, 255, 255, 0.8);
+    --color-bg-secondary: #f8fafc;
+    --color-bg-tertiary: #e2e8f0;
+    --color-bg-card: rgba(255, 255, 255, 0.9);
 
-    --color-text-primary: #1a1a24;
-    --color-text-secondary: #4a4a5e;
-    --color-text-tertiary: #6a6a7e;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-tertiary: #64748b;
 }
 
 /* ===========================
@@ -106,9 +106,9 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 90%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 90%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
     opacity: 1;
@@ -116,7 +116,7 @@ body::before {
 }
 
 body.light-theme::before {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 img {
@@ -340,7 +340,7 @@ body.light-theme .theme-toggle .moon-icon {
 .orb-1 {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
     top: -10%;
     left: -10%;
     animation-delay: 0s;
@@ -349,7 +349,7 @@ body.light-theme .theme-toggle .moon-icon {
 .orb-2 {
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
     top: 40%;
     right: -5%;
     animation-delay: 7s;
@@ -358,7 +358,7 @@ body.light-theme .theme-toggle .moon-icon {
 .orb-3 {
     width: 450px;
     height: 450px;
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
     bottom: -10%;
     left: 30%;
     animation-delay: 14s;
